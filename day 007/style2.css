@@ -1,0 +1,53 @@
+.container {
+  display: flex;
+  height: 50vw;
+}
+
+.right {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  color: white;
+  font-size: 30px;
+  font-weight: 900;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.yellow {
+  background-color: rgb(243, 243, 10);
+}
+
+.green {
+  background-color: green;
+}
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.orange {
+  background-color: rgb(228, 148, 0);
+}
+
+@media only screen and (max-width: 576px) {
+  .container {
+    flex-direction: column;
+    height: calc(200vw);
+  }
+
+  .left {
+    flex-grow: 1;
+    width: 100%;
+  }
+}

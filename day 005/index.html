@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Day 005</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="form">
+      <form>
+        <h1>Payment form</h1>
+        <h5>
+          Required fields are followed by <abbr title="PRIVALOMA!">*</abbr>.
+        </h5>
+        <h3>Contact information</h3>
+        <fieldset>
+          <legend>Title</legend>
+          <input type="radio" id="mister" name="title" />
+          <label for="mister">Mister</label>
+          <br>
+          <input type="radio" id="miss" name="title" />
+          <label for="miss">Miss</label>
+        </fieldset>
+        <div class="input">
+            <label for="name">Name: <abbr title="Privaloma">*</abbr></label>
+            <input type="text" id="name" required />
+        </div>
+        <div class="input">
+            <label for="email">E-mail: <abbr title="Privaloma">*</abbr></label>
+            <input type="email" id="email" required />
+        </div>
+        <div class="input">
+            <label for="password">Password: <abbr title="Privaloma">*</abbr></label>
+            <input type="password" id="password" required />
+        </div>
+        <h3>Payment information</h3>
+        <div class="input">
+            <label for="card">Card type:</label>
+            <select id="card" name="card">
+              <option value="visa">Visa</option>
+              <option value="mastercard">Mastercard</option>
+            </select>
+        </div>
+        <div class="input">
+            <label for="card-nr">Card number: <abbr title="privaloma">*</abbr></label>
+            <input type="number" id="card-nr" required />
+        </div>
+        <div class="input">
+            <label for="expiration_date">Expiration date: <abbr title="privaloma">*</abbr></label>
+            <input
+              type="text"
+              id="expiration_date"
+              required
+              pattern="[0-9][0-9]\/[0-9][0-9]"
+            />
+        </div>
+        <h5>formatted as mm/yy</h5>
+        <button type="submit">Validate the payment</button>
+      </form>
+    </div>
+  </body>
+</html>
