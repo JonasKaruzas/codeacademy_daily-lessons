@@ -1,3 +1,151 @@
-html{
-    background-color: lightgrey;
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    /* display: none; */
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(30, 66, 97, 0.9), rgb(30, 66, 97, 0.9)),
+    url('https://images.unsplash.com/photo-1594794637878-bc15ed7d8192?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2075&q=80');
+    padding-left: 6%;
+    padding-right: 6%;
+}
+
+.header__title {
+    font-family: Poppins;
+    font-size: 60px;
+}
+
+.header__line {
+    border-top: 2px solid white;
+    margin: 30px 0;
+}
+
+.header__bottom {
+    display: flex;
+    align-items: center;
+}
+
+.header__text,
+.header__button
+ {
+    font-size: 20px;
+    font-family: 'Nova Square';
+}
+
+.header__text {
+    width: 35%;
+    margin-right: 20px;
+}
+
+.button {
+    border: 2px solid white;
+    padding: 20px;
+}
+
+/* COLOR SECTION */
+
+section:nth-of-type(1) {
+    display: flex;
+    flex-direction: column;
+}
+
+section:nth-of-type(1) .row{
+    display: flex;
+    height: 75vh;
+}
+
+section:nth-of-type(1) h3,
+section:nth-of-type(1) h5 {
+    color: white;
+    margin: 0;
+}
+
+section:nth-of-type(1) h3 {
+    font-family: Poppins;
+    font-size: 40px;
+}
+
+section:nth-of-type(1) h5 {
+    font-family: 'Nova Square';
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+section:nth-of-type(1) .line{
+    border-top: 2px solid white;
+    width: 350px;
+    margin: 20px 0;
+}
+
+section:nth-of-type(1) .row:nth-of-type(1) .color-element:nth-of-type(1) {
+    flex: 2;
+    /* background-color: rgb(74, 190, 206); */
+    background-image: linear-gradient(to bottom, rgba(74, 190, 206, 0.9), rgb(74, 190, 206, 0.9)),
+    url('https://images.unsplash.com/photo-1652011199002-6a71c6bbab06?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2127&q=80');
+
+}
+
+section:nth-of-type(1) .row:nth-of-type(1) .color-element:nth-of-type(2) {
+    flex: 3;
+    /* background-color: rgb(138, 114, 194); */
+    background-image: linear-gradient(to bottom, rgba(138, 114, 194, 0.9), rgb(138, 114, 194, 0.9)),
+    url('https://images.unsplash.com/photo-1652011609738-74e036599c03?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80');
+
+}
+
+section:nth-of-type(1) .row:nth-of-type(2) .color-element:nth-of-type(1) {
+    flex: 3;
+    /* background-color: rgb(233, 122, 103); */
+    background-image: linear-gradient(to bottom, rgba(233, 122, 103, 0.9), rgb(233, 122, 103, 0.9)),
+    url('https://images.unsplash.com/photo-1631063560926-3e520453fd69?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1933&q=80');
+
+}
+
+section:nth-of-type(1) .row:nth-of-type(2) .color-element:nth-of-type(2) {
+    flex: 2;
+    /* background-color: rgb(221, 167, 96); */
+    background-image: linear-gradient(to bottom, rgba(221, 167, 96, 0.9), rgb(221, 167, 96, 0.9)),
+    url('https://images.unsplash.com/photo-1649182359689-be317ec66698?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80');
+
+}
+
+section:nth-of-type(1) .row:nth-of-type(3) .color-element:nth-of-type(1) {
+    flex: 2;
+    /* background-color: rgb(106, 148, 224); */
+    background-image: linear-gradient(to bottom, rgba(106, 148, 224, 0.9), rgb(106, 148, 224, 0.9)),
+    url('https://images.unsplash.com/photo-1651592753269-7d661e4a9899?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80');
+
+}
+
+section:nth-of-type(1) .row:nth-of-type(3) .color-element:nth-of-type(2) {
+    flex: 3;
+    /* background-color: rgb(104, 224, 130); */
+    background-image: linear-gradient(to bottom, rgba(104, 224, 130, 0.9), rgb(104, 224, 130, 0.9)),
+    url('https://images.unsplash.com/photo-1650119318655-b4a2af79a588?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80');
+
+}
+
+.color-element {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 6%;
+}
+
+.wrapper section:nth-of-type(2){
+    background-color: rgb(30, 66, 97);
+}
+
+footer {
+    background-color: rgb(26, 49, 70);
+    color: grey;
 }

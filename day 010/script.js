@@ -64,7 +64,7 @@ const priekis = input_vardas.substring(0, input_vardas.length-2);
 
 if(galune === 'as') {
     console.log(`Labas ${priekis}ai`)
-}else if (galune === 'e'){
+}else if (galune === ''){
     console.log(`Labas ${priekis}`);
 }
 
