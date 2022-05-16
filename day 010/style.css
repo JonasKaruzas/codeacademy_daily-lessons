@@ -1,0 +1,9 @@
+html{
+    background-color: lightgrey;
+}
+
+#total {
+    font-weight: 900;
+    font-size: 30px;
+    margin: 10px auto;
+}
