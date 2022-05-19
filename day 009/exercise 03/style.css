@@ -14,8 +14,9 @@ header {
     height: 100vh;
     background-image: linear-gradient(to bottom, rgba(30, 66, 97, 0.9), rgb(30, 66, 97, 0.9)),
     url('https://images.unsplash.com/photo-1594794637878-bc15ed7d8192?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2075&q=80');
-    padding-left: 6%;
-    padding-right: 6%;
+    background-size: cover;
+    padding-left: 12%;
+    padding-right: 12%;
 }
 
 .header__title {
@@ -53,6 +54,7 @@ header {
 /* COLOR SECTION */
 
 section:nth-of-type(1) {
+    /* display: none; */
     display: flex;
     flex-direction: column;
 }
@@ -141,11 +143,66 @@ section:nth-of-type(1) .row:nth-of-type(3) .color-element:nth-of-type(2) {
     padding-left: 6%;
 }
 
+/* LOWER SECTION */
+
 .wrapper section:nth-of-type(2){
     background-color: rgb(30, 66, 97);
+    height: 50vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 12%;
+    padding-right: 12%;
 }
+
+section:nth-of-type(2) h3{
+    font-family: Poppins;
+    font-size: 40px;
+}
+
+section:nth-of-type(2) .line{
+    border-top: 2px solid white;
+    width: 40%;
+}
+
+section:nth-of-type(2) h4{
+    font-family: Poppins;
+    font-size: 15px;
+    line-height: 30px;
+
+}
+
+section:nth-of-type(2) .button{
+    font-size: 20px;
+    font-family: 'Nova Square';
+    width: max-content;
+}
+
+/* FOOTER */
 
 footer {
     background-color: rgb(26, 49, 70);
     color: grey;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 12%;
+}
+
+footer .social-links {
+    display: flex;
+    flex-direction: row;
+}
+
+.social-links div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
 }
