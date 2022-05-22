@@ -1,0 +1,72 @@
+body {
+    background-color: lightgray;
+}
+
+header {
+    background-color: white;
+    text-align: center;
+    box-shadow: 0px 0px 4px 2px #9c9c9c;
+}
+
+header img{
+    margin: 0 auto;
+    padding-top: 10px;
+    display: block;
+}
+
+header a {
+    font-size: 30px;
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+}
+
+main{
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px 2px #9c9c9c;
+}
+
+main h1 {
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; 
+}
+
+table tr {
+    border-bottom: 1px solid lightgray;
+}
+
+table th {
+    text-align: left;
+    padding: 10px 0;
+}
+
+table td {
+    padding: 10px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+}
+
+@media screen and (min-width:800px) {
+    header img, header a {
+        display: inline-block;
+    }
+
+    
+    main {
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+
+}
