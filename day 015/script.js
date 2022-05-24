@@ -104,7 +104,7 @@ console.log(sum(0));
 console.log(sum(2));
 console.log(sum(5));
 
-console.log('---------- Uzduotis 9 -----------');
+console.log('---------- Uzduotis 9 V1-----------');
 
 function reverseString(str){
     let arr = str.split('');
@@ -120,7 +120,7 @@ function reverseString(str){
 console.log(reverseString('Labas'));
 
 
-console.log('---------- Uzduotis 9B -----------');
+console.log('---------- Uzduotis 9 V2 -----------');
 
 function reverseString2(str){
     let reverseStr = '';
