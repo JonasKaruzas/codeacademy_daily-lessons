@@ -1,0 +1,153 @@
+html * {
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+    margin: 0;
+}
+
+.sign-up__wrapper {
+    max-width: 1440px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.sign-up__image-container-left {
+    flex-basis: 781px;
+    background-image: url('images/sign_up_bg.jfif');
+    background-size: cover;
+    background-position-y: 90%;
+}
+
+.sign-up__container {
+    max-width: 659px;
+    padding: 103px 93px 136px 93px;
+}
+
+.sign-up__title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 48px;
+    color: #333333;
+}
+
+.sign-up__subtitle {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 40px;
+    color: rgba(102, 102, 102, 0.8);
+}
+
+.sign-up__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.sign-up__form label[for="email"],
+.sign-up__form label[for="password"] {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #666666;
+    margin-bottom: 7px;
+}
+
+.sign-up__form input[type="email"],
+.sign-up__form input[type="password"] {
+    border: 1px solid rgba(102, 102, 102, 0.35);
+    border-radius: 12px;
+    height: 56px;
+    padding-left: 20px;
+    font-size: 16px;
+}
+
+.sign-up__form input[type="email"] {
+    margin-bottom: 24px;
+}
+
+.password__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hide__container img {
+    width: 24px;
+    height: 24px;
+}
+
+.hide__container {
+    display: flex;
+    gap: 12px;
+    padding-right: 9px;
+}
+
+.password-tip {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #666666;
+    margin-bottom: 48px;
+}
+
+.check-box__container {
+    display: flex;
+    gap: 11px;
+}
+
+.check-box__container a {
+    color: #333333;
+}
+
+.sign-up__form label[for="agree"],
+.sign-up__form label[for="subscribe"] {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+    margin-bottom: 24px;
+}
+
+.capcha__container {
+    box-sizing: border-box;
+    max-width: 363px;
+    height: 68px;
+    border: 1px solid #333333;
+    border-radius: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 26px;
+    padding-right: 24px;
+    margin-bottom: 40px;
+}
+
+.capcha__checkbox__container label {
+    margin-left: 8px;
+}
+
+.signup__button-submit {
+    width: 250px;
+    height: 64px;
+    border: none;
+    background: #111111;
+    opacity: 0.25;
+    border-radius: 32px;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 33px;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.log-in {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+}
+
+.log-in a {
+    text-decoration: underline;
+    color: #333333;
+}
